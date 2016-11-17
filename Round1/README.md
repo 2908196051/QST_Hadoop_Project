@@ -29,6 +29,7 @@
             bin目录下 namenode -format
             进入sbin目录 start-all.sh
             输入jps查看进程；hadoop启动成功
+      10) 安装配置hbase
 第二步：
       1) 读入数据，用split以空格切分，切分后 提取出IP和URL 以每天为rowkey CF:IP   CF:URL两列  存入hbase表
       2) UV统计：从表中读出某一天的数据 对 CF:IP的内容进行count，统计去重后的IP数量
